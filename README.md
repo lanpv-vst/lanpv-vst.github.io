@@ -1,1 +1,1 @@
-# lanpv-vst.github.io
+# Ứng dụng hỗ trợ lập chứng từ kế toán là một nền tảng số hóa chuyên biệt, được thiết kế nhằm tự động hóa, chuẩn hóa và nâng cao hiệu quả quy trình lập, kiểm tra, luân chuyển và lưu trữ chứng từ kế toán.
