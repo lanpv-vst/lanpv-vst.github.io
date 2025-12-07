@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LanPV - VST</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f9f9f9;
+        }
+
+        /* Header đỏ */
+        .header {
+            background: #9f2241; /* màu đỏ rượu chính xác như ảnh */
+            color: white;
+            padding: 12px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .header-text {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .zalo-btn {
+            border: 2px solid white;
+            padding: 6px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            background: transparent;
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .zalo-btn:hover {
+            background: white;
+            color: #9f2241;
+        }
+
+        /* Phần dưới header (logo + menu) */
+        .navbar {
+            background: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo img {
+            height: 50px; /* bạn có thể thay đổi kích thước */
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            font-size: 17px;
+        }
+
+        .menu a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .menu a:hover {
+            color: #9f2241;
+        }
+
+        .search-icon {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 768px) {
+            .header, .navbar {
+                padding: 12px 15px;
+                flex-direction: column;
+                text-align: center;
+            }
+            .menu {
+                margin-top: 10px;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Thanh đỏ phía trên -->
+    <div class="header">
+        <div class="header-text">
+            Phần mềm quản lý công việc giá rẻ (Appsheet, GSheet, Excel...)
+        </div>
+        <button class="zalo-btn">Zalo</button>
+    </div>
+
+    <!-- Thanh logo + menu -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="https://lanpv-vst.github.io/Public/">
+                <img src="https://lanpv-vst.github.io/Public/firefly-logo.png" alt="Firefly Logo">
+                <!-- Nếu bạn chưa có file logo, có thể tạm thay bằng link này hoặc upload lên repo của bạn -->
+            </a>
+        </div>
+        <div class="menu">
+            <a href="#">Trang chủ</a>
+            <a href="#">Báo cáo</a>
+            <a href="#">Kiểm tra TLPC</a>
+            <a href="#">Zalo</a>
+            <span class="search-icon">🔍</span>
+        </div>
+    </div>
+
+    <!-- Nội dung trang của bạn sẽ để ở đây -->
+    <div style="padding: 40px;">
+        <h1>Chào mừng đến với LanPV - VST</h1>
+        <p>Nội dung trang web của bạn sẽ hiển thị ở đây...</p>
+    </div>
+
+</body>
+</html>
