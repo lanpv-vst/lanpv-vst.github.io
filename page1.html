@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Câu chuyện TSV & VBA của Hải</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #3f72af, #112d4e);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        .section {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .story-block {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            margin-bottom: 50px;
+            padding: 30px;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .story-block img {
+            width: 260px;
+            height: 260px;
+            border-radius: 14px;
+            object-fit: cover;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        .story-text {
+            flex: 1;
+            font-size: 18px;
+        }
+
+        .code-box {
+            background: #1e1e1e;
+            color: #eee;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: Consolas, monospace;
+            font-size: 15px;
+            margin-top: 15px;
+        }
+
+        footer {
+            margin-top: 80px;
+            background: #112d4e;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Fade-in Animation */
+        .fade {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.8s ease;
+        }
+
+        .fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chuyện Hải & File TSV Kỳ Bí</h1>
+    <p>Khi cuộc đời quá ngắn để tách cột bằng tay… hãy để VBA lo ✔️</p>
+</header>
+
+<div class="section">
+
+    <!-- Block 1 -->
+    <div class="story-block fade">
+        <img src="https://images.unsplash.com/photo-1587620931261-8aa9a2f5c1d4?q=80&w=1000" alt="Excel bối rối" />
+        <div class="story-text">
+            <p>Hải vừa tải xong một file TSV từ TABMIS. Mở ra thì Excel nhìn nó như nhìn người lạ ngoài hành tinh. Cột dính nhau, số bay loạn xạ…</p>
+            <p>Hải thở dài: <i>“Không lẽ lại ngồi tách từng cột như gỡ bánh đa?”</i></p>
+        </div>
+    </div>
+
+    <!-- Block 2 -->
+    <div class="story-block fade">
+        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1000" alt="Hacker vibes" />
+        <div class="story-text">
+            <p>Hải quyết định dùng VBA, dù cậu chỉ biết đúng một điều: VBA nằm sau phím <b>Alt + F11</b> ❗</p>
+            <p>Cậu mở cửa sổ lập trình cổ lỗ sĩ — trông như phần mềm Windows XP — nhưng vẫn chạy cực tốt.</p>
+
+            <div class="code-box">
+filePath = Application.GetOpenFilename() <br/>
+Set ws = Sheets.Add <br/>
+ws.Name = "data" & Sheets.Count
+            </div>
+
+            <p>Nhìn ba dòng code mà Hải cảm giác mình là hacker trong phim Hollywood. Chỉ thiếu cái kính râm 😎.</p>
+        </div>
+    </div>
+
+    <!-- Block 3 -->
+    <div class="story-block fade">
+        <img src="https://images.unsplash.com/photo-1581093588401-22f6362a0d59?q=80&w=1000" alt="Excel gọn gàng" />
+        <div class="story-text">
+            <p>Hải chạy macro. Excel thong thả hỏi:</p>
+            <p><b>“Chọn file đi bạn trẻ.”</b></p>
+            <p>Hải chọn file TSV. Một giây sau, sheet mới hiện ra. Dữ liệu gọn gàng như vừa được ủi phẳng ✨</p>
+        </div>
+    </div>
+
+    <!-- Block 4 -->
+    <div class="story-block fade">
+        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1000" alt="Cà phê bình yên" />
+        <div class="story-text">
+            <p>Hải dựa lưng, khoanh tay:</p>
+            <p><i>“Vậy mà bao năm nay mình đi tách cột bằng tay như nông dân thời kỳ đồ đá.”</i></p>
+
+            <p>Từ đó trở đi, mỗi khi thấy TSV của TABMIS, Hải chỉ mỉm cười.  
+            VBA lo hết.  
+            Chỉ còn lại Hải và tách cà phê bình yên ☕.</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2025 – Câu chuyện nhỏ dành cho những người lớn lên cùng Excel.</p>
+</footer>
+
+<script>
+    // Hiệu ứng fade-in khi cuộn trang
+    const fades = document.querySelectorAll('.fade');
+
+    const reveal = () => {
+        const trigger = window.innerHeight * 0.85;
+        fades.forEach(el => {
+            const top = el.getBoundingClientRect().top;
+            if (top < trigger) el.classList.add('visible');
+        });
+    };
+
+    window.addEventListener('scroll', reveal);
+    window.addEventListener('load', reveal);
+</script>
+
+</body>
+</html>
